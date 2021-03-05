@@ -14,6 +14,7 @@ calculate.addEventListener("click",
     //2. control on the input name of the burger
     if (nameInput.value != "") {
       // console.log(nameInput.value);
+
       // 3. checking which element is selected through the list
       var sum = 50;
       for (var i = 0; i < customIngredient.length; i++) {

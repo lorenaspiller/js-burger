@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- /google font -->
+
     <link rel="stylesheet" href="css/style.css">
     <title>JS Burger</title>
   </head>
@@ -13,42 +19,48 @@
 
       <header>
         <h1>Create your burger</h1>
+        <img src="img/burger-top.png" alt="big burger">
       </header>
 
       <main>
         <div class="burger-name">
-          <input id="name__input" type="text" placeholder="Name Your Burger">
+          <input id="name__input" class="input" type="text" placeholder="Name Your Burger">
         </div>
 
         <div class="ingredients">
           <ul class="ingredients__list">
             <li>
-              <!-- <img src="img/cheese.svg" alt="cheese"> -->
+              <img src="img/cheese.svg" alt="cheese">
               <label for="cheese" class="capitalize"> cheese
                 <input id="cheese" class="custom-ingredient" type="checkbox" value="4"> Add
               </label>
             </li>
             <li>
-              <label for="egg" class="capitalize"> egg
-                <input id="egg" class="custom-ingredient" type="checkbox" value="6"> Add
-              </label>
-            </li>
-            <li>
-              <label for="mustard" class="capitalize"> mustard
-                <input id="mustard" class="custom-ingredient" type="checkbox" value="3"> Add
-              </label>
-            </li>
-            <li>
+              <img src="img/tomato.svg" alt="tomato">
               <label for="tomato" class="capitalize"> tomato
                 <input id="tomato" class="custom-ingredient" type="checkbox" value="2"> Add
               </label>
             </li>
             <li>
+              <img src="img/fried-egg.svg" alt="egg">
+              <label for="egg" class="capitalize"> egg
+                <input id="egg" class="custom-ingredient" type="checkbox" value="6"> Add
+              </label>
+            </li>
+            <li>
+              <img src="img/lettuce.svg" alt="lettuce">
               <label for="lettuce" class="capitalize"> lettuce
                 <input id="lettuce" class="custom-ingredient" type="checkbox" value="2"> Add
               </label>
             </li>
             <li>
+              <img src="img/mustard.svg" alt="mustard">
+              <label for="mustard" class="capitalize"> mustard
+                <input id="mustard" class="custom-ingredient" type="checkbox" value="3"> Add
+              </label>
+            </li>
+            <li>
+              <img src="img/ketchup.svg" alt="ketchup">
               <label for="ketchup" class="capitalize"> ketchup
                 <input id="ketchup" class="custom-ingredient" type="checkbox" value="3"> Add
               </label>
@@ -58,12 +70,12 @@
 
         <div class="discount-coupon">
           <label for="coupon__input"> Discount Coupon
-            <input id="coupon__input" type="text" placeholder="Do you have a coupon?" value="">
+            <input id="coupon__input" class="input discount" type="text" placeholder="Do you have a coupon?" value="">
           </label>
         </div>
 
         <div class="calculate-button">
-          <button id="calculate">Calculate</button>
+          <button id="calculate" class="btn">calculate</button>
         </div>
 
       </main>

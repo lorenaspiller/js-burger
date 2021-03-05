@@ -6,6 +6,7 @@
 
 body {
   background-color: #fff5e2;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* mix */
@@ -21,29 +22,101 @@ body {
 li {
   list-style: none;
 }
+
+.input {
+  border: none;
+  font-size: 20px;
+  width: 40%;
+}
+
+.discount {
+  font-size: 13px;
+  background-color: #fff5e2;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #fdbb40;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
 /* /mix */
+
+/* typo */
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+/* /typo */
 
 /* header */
 header {
   background-color: #fdbb40;
   padding: 60px 40px 30px 40px;
+  position: relative;
+}
+
+header img {
+  position: absolute;
+  top: -20px;
+  left: 80%;
 }
 /* /header */
 
 /* main */
 main {
   padding: 40px;
-  height: calc(100vh - 225px);
+  height: calc(100vh - 238px);
 }
 
 .ingredients, .discount-coupon {
   margin-top: 40px;
 }
 
+.ingredients__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ingredients__list li {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 10px 0;
+}
+
+.ingredients__list .custom-ingredient {
+  margin: 0 10px;
+}
+
+.ingredients__list img {
+  width: 15%;
+  margin-right: 10px;
+}
+
+.ingredients__list li label {
+  font-weight: bold;
+}
+
+.ingredients__list li label input {
+  background: red;
+}
+
+.discount-coupon input {
+  width: 60%;
+  margin-left: 10px;
+}
+
 .calculate-button {
   margin: 40px 0 70px 0;
   text-align: center;
 }
+
 /* /main */
 
 /* footer */
@@ -53,6 +126,8 @@ footer {
   align-items: center;
   background-color: #d33359;
   color: #fff;
+  font-size: 25px;
+  font-weight: bold;
   padding: 40px 40px;
 }
 /* /footer */
