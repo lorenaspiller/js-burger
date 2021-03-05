@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color:
+  background-color: #fff5e2;
 }
 
 /* mix */
@@ -13,4 +13,46 @@ body {
   max-width: 800px;
   background-color: #fff;
 }
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
 /* /mix */
+
+/* header */
+header {
+  background-color: #fdbb40;
+  padding: 60px 40px 30px 40px;
+}
+/* /header */
+
+/* main */
+main {
+  padding: 40px;
+  height: calc(100vh - 225px);
+}
+
+.ingredients, .discount-coupon {
+  margin-top: 40px;
+}
+
+.calculate-button {
+  margin: 40px 0 70px 0;
+  text-align: center;
+}
+/* /main */
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d33359;
+  color: #fff;
+  padding: 40px 40px;
+}
+/* /footer */

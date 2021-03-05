@@ -5,22 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>JS Burger</title>
   </head>
   <body>
     <!-- container -->
     <div class="container">
 
       <header>
-
+        <h1>Create your burger</h1>
       </header>
 
       <main>
+        <div class="burger-name">
+          <input id="name__input" type="text" placeholder="Name Your Burger">
+        </div>
+
+        <div class="ingredients">
+          <ul class="ingredients__list">
+            <li>
+              <!-- <img src="img/cheese.svg" alt="cheese"> -->
+              <label for="cheese" class="capitalize"> cheese
+                <input id="cheese" type="checkbox"> Add
+              </label>
+            </li>
+            <li>
+              <label for="egg" class="capitalize"> egg
+                <input id="egg" type="checkbox"> Add
+              </label>
+            </li>
+            <li>
+              <label for="mustard" class="capitalize"> mustard
+                <input id="mustard" type="checkbox"> Add
+              </label>
+            </li>
+            <li>
+              <label for="tomato" class="capitalize"> tomato
+                <input id="tomato" type="checkbox"> Add
+              </label>
+            </li>
+            <li>
+              <label for="lettuce" class="capitalize"> lettuce
+                <input id="lettuce" type="checkbox"> Add
+              </label>
+            </li>
+            <li>
+              <label for="ketchup" class="capitalize"> ketchup
+                <input id="ketchup" type="checkbox"> Add
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="discount-coupon">
+          <label for="coupon__input"> Discount Coupon
+            <input id="coupon__input" type="text" placeholder="12354ABCDEF" value="">
+          </label>
+        </div>
+
+        <div class="calculate-button">
+          <button id="calculate">Calculate</button>
+        </div>
 
       </main>
 
       <footer>
-
+        <div class="price">Your Price</div>
+        <div id="total" class="total">50 &euro;</div>
       </footer>
     </div>
     <!-- /container -->
